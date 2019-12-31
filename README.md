@@ -141,5 +141,10 @@ ctx.fillText(text, textStartX, textY);
 这里简单的将每一本书作为一块区域，高度固定，因此 `内容区域的高度 = 书籍数量 * 书籍高度`，通过此方法简单计算出中间内容区的高度，然后动态设置canvas的高度。
 
 ## 源码
-提供简单的微信小程序测试号demo，测试号需要将不校验合法域名打开，不然无法下微信头像和外部图片。正式号需要在微信公众平台配置下载域名
+
+[https://github.com/zhaosheng808/canvasPoster](https://github.com/zhaosheng808/canvasPoster)
+
+提供简单的微信小程序测试号demo，包含请求用户保存canvas图片的授权逻辑。
+
+测试号需要将不校验合法域名打开，不然无法下微信头像和外部图片。正式号需要在微信公众平台配置下载域名
 ![image.png](/img/bVbCaex)
