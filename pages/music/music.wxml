@@ -1,0 +1,6 @@
+<!--pages/music/music.wxml-->
+<view>
+  <button class="button-hover" size="mini" type="primary" bindtap="playMusic">播放音乐</button>
+  <button class="button-hover" size="mini" type="primary" bindtap="pauseMusic">暂停音乐</button>
+  <button class="button-hover" size="mini" type="primary" bindtap="playNextMusic">下一曲</button>
+</view>

@@ -1,0 +1,4 @@
+/* pages/music/music.wxss */
+button{
+  margin: 6rpx 10rpx;
+}

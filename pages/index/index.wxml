@@ -1,0 +1,29 @@
+<!--index.wxml-->
+
+<button class="button-hover btn-auth"
+        catchtap="preD"
+        open-type="getUserInfo"
+        type="warn"
+        size="mini"
+        lang="zh_CN" bindgetuserinfo="getuserinfo">授权
+</button>
+<button class="button-hover"
+        type="primary"
+        bindtap="createImg">生成海报
+</button>
+
+
+<!--canvas盒子-->
+<view class="canvas-box">
+    <canvas canvas-id="canvas" class="canvas" style="width: {{canvasWidth}}px; height: {{canvasHeight}}px;"></canvas>
+</view>
+
+<!--poster-->
+<view class="dialog-wrapper poster-dialog {{showPoster ? 'active' : ''}}" catchtouchmove='preD'>
+    <scroll-view scroll-y class="poster-box">
+        <image src="{{tempShareImg}}" mode="widthFix" alt=""></image>
+    </scroll-view>
+    <button class="btn-close" bindtap="closePoster">
+        <image style="width: 84rpx;height:84rpx" mode="aspectFit" src="/assets/images/close.png"></image>
+    </button>
+</view>

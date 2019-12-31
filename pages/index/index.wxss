@@ -1,0 +1,55 @@
+/**index.wxss**/
+.btn-auth{
+  position: fixed;
+  top: 20rpx;
+  right: 20rpx;
+}
+.canvas-box{
+  position: fixed;
+  top: 1000px;
+  left: 1000px;
+  z-index: -10;
+}
+
+.dialog-wrapper{
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 101;
+  background-color: rgba(0, 0 ,0 , 0.5);
+}
+.dialog-wrapper.poster-dialog{
+  z-index: -1;
+  display: none;
+}
+.dialog-wrapper.poster-dialog.active{
+  top: 0;
+  left: 0;
+  z-index: 10;
+  display: block;
+}
+
+.poster-box{
+  margin: 120rpx auto 0;
+  width: 600rpx;
+  min-height: 200rpx;
+  max-height: calc(100vh - 340rpx);
+  /*height: calc(100vh - 300rpx);*/
+  position: relative;
+  overflow: auto;
+}
+.poster-box image{
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.btn-close{
+  margin-top: 20rpx;
+  width: 86rpx;
+  height: 86rpx;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
